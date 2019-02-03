@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRL"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/icon" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="130dp"
+        android:layout_toEndOf="@+id/icon"
+        android:layout_toRightOf="@+id/icon"
+        android:lines="2"
+        android:singleLine="false"
+        android:text="@string/title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_extraLarge"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_first"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/first_button"
+        android:text="@string/first_button"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_large"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_second"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/button_first"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/second_button"
+        android:text="@string/second_button"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_large"
+        android:textStyle="bold" />
+</RelativeLayout>
